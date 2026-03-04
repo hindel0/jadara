@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    display: grid;
+    grid-template-areas: "content1 content1 content2 right-aside"
+                         "content1 content1 content3 right-aside"
+                       "content4 content5 content5 right-aside"
+                       "content6 content7 content8 right-aside";
+    grid-gap: 10px 10px;
+    width: 100vw;
+    height: 100vh;}
+.cas{
+    background-color: yellow;
+    height: 100px;}
+.un{grid-area: content1;}
+.deux{grid-area: content2;}
+.trois{grid-area: content3;}
+.quatre{grid-area: content4;}
+.cinq{grid-area: content5;}
+.six{grid-area: content6;}
+.sept{grid-area: right-aside;}
+.huit{grid-area: content7;}
+.neuf{grid-area: content8;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cas un"> un</div>
+        <div class="cas deux">deux</div>
+        <div class="cas trois">trois</div>
+        <div class="cas quatre">quatre</div>
+        <div class="cas cinq">cinq</div>
+        <div class="cas six">six</div>
+        <div class="cas sept">sept</div>
+        <div class="cas huit">huit</div>
+        <div class="cas neuf" >neuf</div>
+        
+    </div>
+</body>
+</html>

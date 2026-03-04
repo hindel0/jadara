@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        button:hover {
+            background-color: rgb(24, 189, 201);
+            font-size: large; }
+
+        .div {
+            width: 50%;
+            height: 80px;
+            background-color: rgb(139, 89, 185); }
+
+        div:hover {
+            background-color: black; }
+
+        div:active {
+            background-color: rgb(4, 4, 78);  }
+
+        a:active {
+            font-size: large; }
+
+        a:link {
+            color: rgb(88, 7, 7); }
+
+        a:visited {
+            color: rgb(121, 121, 9); }
+
+        input:focus {
+            background-color: gray; }
+
+        li:first-child {
+            color: green; }
+
+        li:nth-child(5) {
+            color: gray}
+
+        li:last-child {
+            color: red;}
+
+        p::first-line {
+            background-color: brown;}
+
+        p::first-letter {
+            font-size: 30px;}
+
+        p::selection {
+            background-color: white; }
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <h2>:Hover</h2>
+            <button>Apply</button>
+            <br></br>
+            <div class="div"></div>
+        </li>
+        <li>
+            <h2>:Active</h2>
+        </li>
+        <li>
+            <h2>:Visited</h2>
+            <a href="https://www.google.com/">Google</a>
+        </li>
+        <li>
+            <h2>:Link</h2>
+            <a href="https://www.facebook.com/?locale=fr_FR">Facebook</a>
+        <li>
+            <h2>:Focus</h2>
+            <input type="text">
+        </li>
+    </ul>
+    <ul>
+        <li>class1</li>
+        <li>class2</li>
+        <li>class3</li>
+        <li>class4</li>
+        <li>class5</li>
+        <li>class6</li>
+        <li>class7</li>
+        <li>class8</li>
+    </ul>
+    <p> pseudo-classes is a keyword, allows you to style an element ina specific state.
+        states: hover, active and focus.
+    </p>
+    
+</body>
+
+</html>

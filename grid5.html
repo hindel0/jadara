@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: "left-aside content1 content1"
+                "left-aside content2 content3";
+            grid-gap: 10px 10px;
+            background-color: black;
+
+        }
+
+        .cas1 {
+            background-color: aquamarine;
+            grid-area: left-aside;
+        }
+
+        .cas2 {
+            background-color: rgb(236, 21, 208);
+            grid-area: content1;
+        }
+
+        .cas3 {
+            background-color: rgb(38, 176, 240);
+            grid-area: content2;
+        }
+
+        .cas4 {
+            background-color: orange;
+            grid-area: content3;
+        }
+
+        .number2 {
+            color: white;
+            font-size: 40px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        .number {
+            font-size: 40px;
+            font-style: normal;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cas2 {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cas cas1">
+            <p class="number"> 33 </p>
+            <h4> this is my worle</h4>
+            <p> hi this is my html vscode</p>
+
+
+        </div>
+        <div class="cas cas2">
+            <div class="number2">228 </div>
+            <div>
+                <p>A paragraph always starts on a new line,<br> and browsers automatically add some white space (a margin)
+                    before and after a paragraph. </p>
+            </div>
+
+        </div>
+        <div class="cas cas3">3</div>
+        <div class="cas cas4">4</div>
+    </div>
+</body>
+
+</html>

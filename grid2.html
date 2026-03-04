@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    .container{
+ display: grid;
+ grid-gap:10px 10px;
+ grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-areas: "header header header"
+           "left-aside  content1   content1"
+           "left-aside  content2   right-aside"
+           "left-aside  content3   right-aside"
+           "low-content1 low-content1 low-content2"
+          "footer footer footer";}
+
+
+   .un{grid-area: header;
+background-color: blue;
+padding: 10px;}
+   .deux{grid-area: left-aside;
+background-color: blueviolet;
+padding: 50px;}
+   .trois{grid-area: content1;
+background-color: rgb(226, 125, 43);
+padding: 10px;}
+   .quatre{grid-area: content2;
+background-color: brown;
+padding: 50px;}
+   .cinq{grid-area: right-aside;
+background-color: aqua;
+padding: 10px;}
+   .six{grid-area: content3;
+background-color: red;
+padding: 10px;}
+.sept{background-color: rgb(109, 184, 12);
+grid-area: low-content1;}
+.huit{background-color: brown;
+grid-area: low-content2;}
+.neuf{background-color: grey;
+grid-area: footer;}
+.cas{text-align: center;
+     font-size: medium;
+   font-style: italic;
+   font-family: 'Times New Roman', Times, serif;}
+
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="cas un">un</div>
+    <div class="cas deux">deux</div>
+    <div class="cas trois">trois</div>
+    <div class="cas quatre">quatre</div>
+    <div class="cas cinq">cinq</div>
+    <div class="cas six">six</div>
+    <div class="cas sept">sept</div>
+    <div class="cas huit">huit</div>
+    <div class="cas neuf">neuf</div>
+
+
+
+</div>
+</body>
+</html>
