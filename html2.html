@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        /* Basic styling to make the sections visible */
+        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+        nav { background: #333; color: #fff; padding: 1rem; position: sticky; top: 0; }
+        nav a { color: #fff; margin-right: 15px; text-decoration: none; }
+        section { padding: 60px 20px; border-bottom: 1px solid #ccc; min-height: 200px; }
+        footer { background: #333; color: #fff; text-align: center; padding: 1rem; }
+        form div { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <!-- 2. Sections -->
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is the home section.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself here.</p>
+        </section>
+
+        <section id="work">
+            <h2>My Work</h2>
+            <p>Showcase your projects and professional experience here.</p>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>You can link your PDF resume here or list your skills.</p>
+        </section>
+
+        <!-- Contact Section using HTML Forms -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- 3. Page Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
