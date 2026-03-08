@@ -1,0 +1,77 @@
+function sumOfDistinctElements(set1, set2) {
+    let sum = 0;
+
+    // Check elements in Set 1 not present in Set 2
+    for (let i = 0; i < set1.length; i++) {
+        let found = false;
+        for (let j = 0; j < set2.length; j++) {
+            if (set1[i] === set2[j]) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            sum += set1[i];
+        }
+    }
+
+    // Check elements in Set 2 not present in Set 1
+    for (let i = 0; i < set2.length; i++) {
+        let found = false;
+        for (let j = 0; j < set1.length; j++) {
+            if (set2[i] === set1[j]) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            sum += set2[i];
+        }
+    }
+
+    return sum;
+}
+
+// Test with example data
+const set1 = [3, 1, 7, 9];
+const set2 = [2, 4, 1, 9, 3];
+console.log(sumOfDistinctElements(set1, set2)); // Output: 13
+[18:04, 3/8/2026] .: PROCEDURE dot_product(v1, v2 : ARRAY_OF FLOAT, VAR ps : FLOAT)
+VAR
+    i : INTEGER
+BEGIN
+    ps := 0
+    FOR i FROM 0 TO v1.length - 1 DO
+        ps := ps + (v1[i] * v2[i])
+    END_FOR
+END
+ALGORITHM orthogonal_check
+VAR
+    v1, v2 : ARRAY_OF FLOAT
+    ps : FLOAT
+    n, i : INTEGER
+BEGIN
+    Read(n) // Number of pairs
+    FOR i FROM 1 TO n DO
+        Read(v1)
+        Read(v2)
+        
+        dot_product(v1, v2, ps) // Calling the procedure
+        
+        IF (ps = 0) THEN
+            Write("The vectors are orthogonal")
+        ELSE
+            Write("The vectors are NOT orthogonal")
+        END_IF
+    END_FOR
+END
+FUNCTION dot_product_func(v1, v2 : ARRAY_OF FLOAT) : FLOAT
+VAR
+    i : INTEGER
+    result : FLOAT := 0
+BEGIN
+    FOR i FROM 0 TO v1.length - 1 DO
+        result := result + (v1[i] * v2[i])
+    END_FOR
+    RETURN result
+END
