@@ -1,0 +1,27 @@
+ALGORITHM sentence_analysis
+VAR
+    c : CHAR := ''
+    char_count : INTEGER := 0
+    word_count : INTEGER := 1  // Starts at 1 assuming there's at least one word
+    vowel_count : INTEGER := 0
+BEGIN
+    WHILE (c <> '.') DO
+        Read(c)
+        char_count := char_count + 1
+        
+        // Check for vowels (case insensitive)
+        IF (c = 'a' OR c = 'e' OR c = 'i' OR c = 'o' OR c = 'u' OR 
+            c = 'A' OR c = 'E' OR c = 'I' OR c = 'O' OR c = 'U') THEN
+            vowel_count := vowel_count + 1
+        END_IF
+        
+        // Check for spaces to count words
+        IF (c = ' ') THEN
+            word_count := word_count + 1
+        END_IF
+    END_WHILE
+
+    Write("Length of sentence: ", char_count)
+    Write("Number of words: ", word_count)
+    Write("Number of vowels: ", vowel_count)
+END
