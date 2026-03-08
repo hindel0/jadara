@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page - Bootstrap</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net" rel="stylesheet">
+    <style>
+        .product-card { transition: transform 0.3s; }
+        .product-card:hover { transform: translateY(-10px); }
+        .card-img-top { height: 200px; object-fit: cover; }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="logo">BrandStore</div>
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Product Section -->
+        <section id="products" class="product-section">
+            <h2 class="section-title">Our Featured Products</h2>
+            
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com" alt="Product 1">
+                    <h3>Premium Watch</h3>
+                    <p>Elegant timekeeping for the modern professional.</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com" alt="Product 2">
+                    <h3>Wireless Buds</h3>
+                    <p>Crystal clear sound with long-lasting battery life.</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com" alt="Product 3">
+                    <h3>Smart Speaker</h3>
+                    <p>Your home assistant with premium bass quality.</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com" alt="Product 4">
+                    <h3>Leather Bag</h3>
+                    <p>Handcrafted durability for your daily travels.</p>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2026 BrandStore Community. All rights reserved.</p>
+    </footer>
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net"></script>
+</body>
+</html>
